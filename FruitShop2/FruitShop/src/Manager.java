@@ -84,10 +84,10 @@ public class Manager {
             continueOrdering = validate.checkInputYN("Do you want to continue ordering (Y/N)?");
         }
 
-        if (orderedItems.isEmpty()) {
-            System.out.println("No items were ordered.");
-            return;
-        }
+        // if (orderedItems.isEmpty()) {
+        //     System.out.println("No items were ordered.");
+        //     return;
+        // }
 
         String customerName = validate.inputString("Input your name: ");
         ShoppingCart cart = new ShoppingCart();
