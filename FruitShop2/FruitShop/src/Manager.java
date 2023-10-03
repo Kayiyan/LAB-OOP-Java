@@ -94,11 +94,11 @@ public class Manager {
         cart.setItems(orderedItems);
         orders.put(customerName, cart);
 
-        System.out.println("Product | Quantity | Price | Amount");
-        for (Fruit fruit : orderedItems) {
-            System.out.printf("%-8s| %-9d| $%-6.2f| $%-6.2f%n",
-                    fruit.getFruitName(), fruit.getQuantity(), fruit.getPrice(), fruit.getTotalPrice());
-        }
+        // System.out.println("Product | Quantity | Price | Amount");
+        // for (Fruit fruit : orderedItems) {
+        //     System.out.printf("%-8s| %-9d| $%-6.2f| $%-6.2f%n",
+        //             fruit.getFruitName(), fruit.getQuantity(), fruit.getPrice(), fruit.getTotalPrice());
+        // }
 
         System.out.println("Total: $" + cart.getTotalPrice());
         System.out.println("Order processed successfully.");
