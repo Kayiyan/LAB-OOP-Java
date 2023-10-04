@@ -61,9 +61,8 @@ public class Manager {
             System.out.println("Item | Fruit Name | Origin | Price");
 
             // Display available fruits with item numbers
-            for (int i = 0; i < fruits.size(); i++) {
-                Fruit fruit = fruits.get(i);
-                System.out.printf("%-4d | %-12s | %-7s | $%-5.2f%n", i + 1, fruit.getFruitName(), fruit.getOrigin(), fruit.getPrice());
+            for (Fruit fruit : fruits) {
+                System.out.printf("%-4s | %-12s | %-7s | $%-5.2f%n", fruit.getFruitId(), fruit.getFruitName(), fruit.getOrigin(), fruit.getPrice());
             }
 
             int selectedItem = validate.inputInt("Select a fruit (Enter Item): ", 1, fruits.size());
