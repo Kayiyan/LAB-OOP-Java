@@ -46,6 +46,6 @@ public class Student {
     }
     
     public void print(){
-        System.out.printf("%-15%-15%-15\n",studentName,semester,courseName);
+        System.out.printf("%-15s%-15s%-15s\n",studentName,semester,courseName);
     }
 }
